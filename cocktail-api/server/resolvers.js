@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken")
 const { AuthenticationError } = require('apollo-server');
 var admin = require("firebase-admin");
-var serviceAccount = require("../lemon-wedges-app-file-upload.json");
+var serviceAccount = require("../orange-peels-app-file-upload.json");
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
