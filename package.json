@@ -1,0 +1,21 @@
+{
+  "name": "cocktail-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd cocktail-api && npm install && node server/index.js",
+    "server": "cd server && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add:users": "node dataModel/UserAPI"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    
+  }
+}

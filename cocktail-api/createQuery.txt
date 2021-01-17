@@ -1,0 +1,22 @@
+mutation{
+  createTable(keyspaceName:"datacenter", tableName:"cocktail", 
+    values:[{name:"id",type:{basic:TEXT}},
+    {name:"name",type:{basic:TEXT}},
+    {name:"tags",type:{basic:TEXT}},
+    {name:"desc",type:{basic:TEXT}},
+    {name:"owner",type:{basic:TEXT}},
+    {name:"imageUrl",type:{basic:TEXT}},
+    {name:"ingredients",type:{info:{subTypes:{basic:TEXT}}, basic:LIST}},
+    {name:"prepareSteps",type:{info:{subTypes:{basic:TEXT}}, basic:LIST}}],
+  partitionKeys:[{name:"id",type:{basic:TEXT}},{name:"owner",type:{basic:TEXT}}])
+}
+
+mutation{
+  createTable(keyspaceName:"datacenter", tableName:"user", 
+    values:[{name:"username",type:{basic:TEXT}},
+    {name:"name",type:{basic:TEXT}},
+    {name:"password",type:{basic:TEXT}},
+    {name:"gender",type:{basic:TEXT}},
+    {name:"email",type:{basic:TEXT}}],
+  partitionKeys:[{name:"username",type:{basic:TEXT},{name:"password",type:{basic:TEXT}}])
+}
