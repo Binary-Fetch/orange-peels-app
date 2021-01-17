@@ -20,6 +20,6 @@ The Orange Peels App  will load in you phone.
 **Note**: The server machine and phone need to be in same network.
 
 ## Sample User Details
-- username: adutt, password: Test123
+- username: adutta, password: Test123
 - username: kbiswas, password: Test123
 

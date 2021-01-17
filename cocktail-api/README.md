@@ -65,7 +65,7 @@ query {
   "data": {
     "login": {
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkdXR0IiwiZW1haWwiOiJheWFuXzk0QHJlZGlmZm1haWwuY29tIiwiaWF0IjoxNjAzOTY2ODA0LCJleHAiOjE2MDM5NzA0MDR9.DWf1VSmZI4fcSlqPXA4ZIReK11rOo09ENhSAC0JF7-0",
-      "username": "adutt",
+      "username": "adutta",
       "email": "ayan_94@rediffmail.com",
       "name": "Ayan Dutta",
       "gender": "Male"
@@ -124,47 +124,28 @@ mutation{
 mutation {
   saveRecipe(recipe:{
       desc: "Create cocktail by following easy steps",
-      imageUrl: [
-         "https://www.recipegirl.com/wp-content/uploads/2007/09/Sea-Breeze-1.jpg"
-      ],
+      imageUrl:"https://www.recipegirl.com/wp-content/uploads/2007/09/Sea-Breeze-1.jpg",
       name: "Flip flop",
       prepareSteps: [
          {
-            description: "In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. Stir well.",
-            imageUrl: [
-               "https://www.recipegirl.com/wp-content/uploads/2007/09/Sea-Breeze-1.jpg"
-            ],
-            order: 1
+            description: "In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. 
          },
-		 {
+        {
             description: "Shake ingredients together in a mixer with ice. Strain into glass, garnish and serve.",
-            imageUrl: [
-               "https://www.recipegirl.com/wp-content/uploads/2007/09/Sea-Breeze-1.jpg"
-            ],
-            order: 2
          }
       ],
       owner: {
-         username: "sday"
+         ownerid: "sday",
+         ownername: "Sayan Day"
       },
       ingredients: [
          {
             amount: "1 parts",
-            ingredient: {
-               name: "Vodka"
-            },
-            quantity: 30,
-            type: "Liquor",
-            unit: "ml"
+            name: "Vodka"
          },
 		 {
             amount: "2 parts",
-            ingredient: {
-               name: "Water"
-            },
-            quantity: 60,
-            type: "Liquor",
-            unit: "ml"
+            name: "Water"
          }
       ]
    }){
